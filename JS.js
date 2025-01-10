@@ -127,7 +127,7 @@ function abe_collection(){
 		collection_4.innerHTML = abe_image[4];
 	}
 	if(abe_image_collection[4] == 1){
-		collection_5.innerHTML = abe_iamge[5];
+		collection_5.innerHTML = abe_image[5];
 	}
 	if(abe_image_collection[5] == 1){
 		collection_6.innerHTML = abe_image[6];
