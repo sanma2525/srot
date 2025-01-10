@@ -62,31 +62,31 @@ function cheat_money(){
 };
 
 function check_missions(){
-const mission1 = document.getElementById('mission1');
-const mission2 = document.getElementById('mission2');
-const mission3 = document.getElementById('mission3');
-const mission4 = document.getElementById('mission4');
+var mission1 = document.getElementById('mission1');
+var mission2 = document.getElementById('mission2');
+var mission3 = document.getElementById('mission3');
+var mission4 = document.getElementById('mission4');
 
 	if(money_num > mission1_term && mission1_flag == false){
-		mission1.innerHTML="✓"+mission1_term+"円集める";
+		mission1.innerHTML="☑"+mission1_term+"円集める";
 		money_num += mission1_term / 10;
 		mission1_flag=true;
 		return;
 	}
 	if(money_num > mission2_term && mission2_flag == false){
-		mission2.innerHTML="✓"+mission2_term+"円集める";
+		mission2.innerHTML="☑"+mission2_term+"円集める";
 		money_num += mission2_term / 10;
 		mission2_flag=true;
 		return;
 	}
 	if(money_num > mission3_term && mission3_flag == false){
-		mission3.innerHTML="✓"+mission3_term+"円集める";
+		mission3.innerHTML="☑"+mission3_term+"円集める";
 		money_num += mission3_term / 10;
 		mission3_flag=true;
 		return;
 	}
 	if(money_num > mission4_term && mission4_flag == false){
-		mission4.innerHTML="✓"+mission4_term+"円集める";
+		mission4.innerHTML="☑"+mission4_term+"円集める";
 		money_num += mission4_term / 10;
 		mission4_flag=true;
 		return;
