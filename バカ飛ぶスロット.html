@@ -1,0 +1,63 @@
+<DOCUTYPE HTML>
+<html> 
+	<head>
+		<meta charset='utf-8'>
+		<title>阿部寛ガチャ</title>
+		<div id='background'></div>
+		<style>
+			.toudai{
+				/*右寄せ*/text-align: right;
+			</style>
+	</head>
+	<body>
+		<script src='JS.js'></script>
+		<div style="text-align:center;">
+			<h1 style="background-color:skyblue; margin: 0 auto;">阿部寛ガチャ</h1>
+			<h2 style="position:center;margin: 0 auto;">ノーマルガチャ：1回  　50円 　合計800個（R：３個　SR：１個　SSR:１個）　確変あり</h2>
+			<h2 style="position:center;margin: 0 auto;">闇ガチャ　　　：1回  1500円　合計600個 （R:３個　SR:１個　SSR：１個） 確変あり</h2>
+			<h2 style="position:center;margin: 0 auto;">ヤケクソガチャ：1回10000円　合計  12個（R：３個　SR：１個）　確変なし</h2>
+			<h2 style="position:center;margin: 0 auto;">R：20000円	SR：50000円　SSR：100000円　（闇ガチャは1.5倍）</h2>
+			<h2>現在の持ち金<div id="money">10000円</div></h2>
+			<button onclick="Start()" style="width:200px; height:100px;">ノーマルガチャを回す</button>
+			<button onclick="yami_Start()" style="width:200px;height:100px">闇ガチャを回す</button>
+			<button onclick="yake_Start()" style="width:200px;height:100px">ヤケクソガチャを回す</button>
+			<div id="counter">ガチャ</div>
+			<div class="toudai"><button onclick="audio()" style="width:200px;height:100px">東大に行け！！</button></div>
+			<audio id="btn_audio">
+				<source src="東大に行け.mp3" type="audio/mp3">
+			</audio>
+			<audio id="btn_audio2">
+				<source src="えい！.mp3" type="audio/mp3">
+			</audio>
+			<audio id="btn_audio3">
+				<source src="そりゃ！.mp3" type="audio/mp3">
+			</audio>
+			<audio id="btn_audio4">
+				<source src="中国.mp3" type="audio/mp3">
+			</audio>
+			<audio id="btn_audio5">
+				<source src="金額表示.mp3" type="audio/mp3">
+			</audio>
+			<audio id="btn_audio6">
+				<source src="世の中なめんな.mp3" type="audio/mp3">
+			</audio>
+			<div id="kakuhen_moji"></div>
+			<div id="number"></div>
+			<div id="slot1" style="display: inline-block; _display: inline;"></div>
+			<h1>阿部寛コレクション</h1>
+			<div id="collection_1" style="margin-right:0px; display: inline-block; _display: inline;"></div>
+			<div id="collection_2" style="margin-right:0px; display: inline-block; _display: inline;"></div>
+			<div id="collection_3" style="margin-right:0px; display: inline-block; _display: inline;"></div>
+			<div id="collection_4" style="margin-right:0px; display: inline-block; _display: inline;"></div>
+			<div id="collection_5" style="margin-right:0px; display: inline-block; _display: inline;"></div>
+			<div id="collection_6" style="margin-right:0px; display: inline-block; _display: inline;"></div>
+			<h1>ミッション</h1>
+			<h3>
+				<div id="mission1">□500000円集める</div>
+				<div id="mission2">□1000000円集める</div>
+				<div id="mission3">□5000000円集める</div>
+				<div id="mission4">□10000000円集める</div>
+			</h3>
+		</div>
+	</body>
+</html>
