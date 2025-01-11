@@ -43,6 +43,10 @@ var mission3_flag =false;
 var mission4_flag =false;
 
 
+//カウンター
+var couneter= 0;
+
+
 const background = document.getElementById('background');
 //現在7
 const abe_image= [
@@ -165,10 +169,12 @@ function Start(){
 	document.getElementById('btn_audio2').currentTime = 0; //連続クリックに対応
     document.getElementById('btn_audio2').play(); //クリックしたら音を再生
 	money_num -= cost;
+	counter++;
 	const Slot1 =document.getElementById("slot1");
 	const number =document.getElementById("number");
 	const money =document.getElementById("money");
 	const kakuhen_moji =document.getElementById("kakuhen_moji");
+	document.getElementById("counter").innerText = "カウンター"+counter+"連";
 	initialize();
 	if(kakuhen == true){
 		kakuhen_moji.innerHTML = "<h1>確変中！ あと"+kakuhen_num+"回</h1>";
@@ -226,6 +232,9 @@ function yami_Start(){
 	const number =document.getElementById("number");
 	const money =document.getElementById("money");
 	const kakuhen_moji =document.getElementById("kakuhen_moji");
+	const counter_html =document.getElementById("counter");
+	counter++;
+	document.getElementById("counter").innerText = "カウンター"+counter+"連";
 	initialize();
 	if(kakuhen == true){
 	kakuhen_moji.innerHTML = "<h1>確変中！ あと"+kakuhen_num+"回</h1>";
@@ -281,6 +290,8 @@ function yake_Start(){
 	const Slot1 =document.getElementById("slot1");
 	const number =document.getElementById("number");
 	const money =document.getElementById("money");
+	counter++;
+	document.getElementById("counter").innerText = "カウンター"+counter+"連";
 	random=Math.floor( Math.random() * 12 );
 	number.innerHTML=random;
 	if(random == 5){
