@@ -44,7 +44,7 @@ var mission4_flag =false;
 
 
 //カウンター
-var couneter= 0;
+var counter= 0;
 
 
 const background = document.getElementById('background');
@@ -232,7 +232,6 @@ function yami_Start(){
 	const number =document.getElementById("number");
 	const money =document.getElementById("money");
 	const kakuhen_moji =document.getElementById("kakuhen_moji");
-	const counter_html =document.getElementById("counter");
 	counter++;
 	document.getElementById("counter").innerText = "カウンター"+counter+"連";
 	initialize();
