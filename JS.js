@@ -210,7 +210,7 @@ function Start(){
 		slot1_img= abe_image[5];
 		money_num +=plus_SR;
 		abe_image_collection[4] = 1 ;
-	}else if(random == 200 && random_yami　== 400){			//虹の阿部
+	}else if(random == 200 && random2　== 400){			//虹の阿部
 		slot1_img　= abe_image[6];
 		money_num += plus_SSR;
 		abe_image_collection[5] = 1;
@@ -242,6 +242,7 @@ function yami_Start(){
 	kakuhen_moji.innerHTML = "";
 	random=Math.floor( Math.random() * yami_kakuritu);
 	}
+	var random2 = Math.floor(Math.random() * kakuritu);
 	number.innerHTML=random;
 	if(random == 5){		//阿部１
 		btn_audio5.play();
@@ -268,7 +269,7 @@ function yami_Start(){
 		slot1_img= abe_image[5];
 		money_num +=plus_SR * 1.5;
 		abe_image_collection[4] = 1 ;
-	}else if(random == 200 && random_yami　== 400){			//虹の阿部
+	}else if(random == 200 && random2　== 400){			//虹の阿部
 		slot1_img　= abe_image[6];
 		money_num += plus_SSR * 1.5;
 		abe_image_collection[5]　=1;
